@@ -1,0 +1,1 @@
+yourloginId|yourpasscode|yourmail@gmail.com|your-app-password-here

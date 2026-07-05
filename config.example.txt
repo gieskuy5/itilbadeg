@@ -1,0 +1,36 @@
+# ╔══════════════════════════════════════════════════╗
+# ║          INTERLINK AUTO-MINING BOT               ║
+# ║      Auto Login • Claim • Token Refresh          ║
+# ╚══════════════════════════════════════════════════╝
+#
+# Endpoints: prod.interlinklabs.ai
+# Flow: Login → Check Claimable → Claim Mine → Wait → Repeat
+# OTP Source: Gmail IMAP (App Password)
+
+# ── CONFIG ──
+BASE_URL = "https://prod.interlinklabs.ai"
+APP_VERSION = "4.0.3"
+USER_AGENT = "okhttp/4.12.0"
+BUNDLE_ID = "org.ai.interlinklabs.interlinkId"
+SYSTEM_NAME = "Android"
+
+# Gmail IMAP
+IMAP_SERVER = "imap.gmail.com"
+IMAP_PORT = 993
+OTP_POLL_INTERVAL = 5
+OTP_POLL_TIMEOUT = 120
+
+# ── ACCOUNTS ──
+# Format: loginId|passcode|gmail|gmail_app_password
+# Example:
+#   yourloginId|yourpasscode|yourmail@gmail.com|xxxx-xxxx-xxxx-xxxx
+
+# ── PROXY (optional) ──
+# One per line: http://user:pass@ip:port
+# Or: ip:port:user:pass
+
+# ── FILES ──
+# accounts.txt   → input: loginId|passcode|gmail|app_password
+# proxy.txt      → input: proxy list (optional)
+# tokens.txt     → output: loginId|jwt_token
+# sessions.json  → output: persistent device fingerprints

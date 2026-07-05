@@ -1,0 +1,3 @@
+# Optional: one proxy per line
+# http://user:pass@ip:port
+# ip:port:user:pass

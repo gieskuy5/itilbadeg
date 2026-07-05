@@ -1,0 +1,8 @@
+accounts.txt
+proxy.txt
+tokens.txt
+sessions.json
+interlink.log
+__pycache__/
+*.pyc
+.env
